@@ -1,7 +1,4 @@
 # Password Checker
-
-## Overview
-
 This Python script checks the security of passwords by querying the [Pwned Passwords API](https://haveibeenpwned.com/Passwords). The API allows you to check if a password has been previously exposed in data breaches. The script uses the k-anonymity model, which means it doesn't send the entire password to the API but only the first five characters of its SHA-1 hash.
 
 ## How to Use
