@@ -1,7 +1,4 @@
-Certainly! Here's the updated README reflecting the changes made to the code:
-
-```markdown
-# Password Checker
+# SafePass Scout
 This Python script checks the security of passwords by querying the [Pwned Passwords API](https://haveibeenpwned.com/Passwords). The API allows you to check if a password has been previously exposed in data breaches. The script uses the k-anonymity model, which means it doesn't send the entire password to the API but only the first five characters of its SHA-1 hash.
 
 ## How to Use
@@ -37,26 +34,3 @@ This Python script checks the security of passwords by querying the [Pwned Passw
 
 ```bash
 python password_checker.py password123 securepassword mysecretpassword
-```
-
-## Notes
-
-- Make sure not to store sensitive passwords or any critical information in plaintext within this repository.
-- The script uses the `requests` library to interact with the Pwned Passwords API, so an active internet connection is required.
-
-## Error Handling Update
-
-The script has been updated to include robust error handling. It now gracefully handles potential issues, such as missing image folders or errors during image processing.
-
-## Disclaimer
-
-This script relies on a third-party service (Pwned Passwords API) and may be subject to its terms of use. Use it responsibly and avoid violating any terms or conditions set by the API provider.
-
-## Contribution
-
-Feel free to contribute to this project by opening issues or creating pull requests. Your feedback and suggestions are welcome!
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-```
